@@ -22,4 +22,14 @@
 
 .Red_glowing {
     color: red;
+    text-shadow: 0 0 3px rgba(255, 112, 112, 0.8),
+                 0 0 3px rgba(255, 112, 112, 0.6),
+                 0 0 3px rgba(255, 112, 112, 0.4);
+}
+
+.Gold_glowing {
+    color: rgb(255, 196, 0);
+    text-shadow: 0 0 3px rgba(255, 196, 0, 0.8),
+                 0 0 3px rgba(255, 196, 0, 0.6),
+                 0 0 3px rgba(255, 196, 0, 0.4);
 }
