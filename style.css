@@ -1,0 +1,21 @@
+.site_header_title{
+    font-size: 50px;
+    /*display: flex;*/               
+    justify-content: center;       
+    align-items: center;
+    text-align: center;
+    height: 1080px;
+    width: 100%;
+    background-color: rgb(67, 142, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.site_header_content {
+    padding-top: 300px;
+}
+.site_header_content h1:hover {
+    color: aliceblue;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+                 0 0 20px rgba(255, 255, 255, 0.6),
+                 0 0 30px rgba(255, 255, 255, 0.4);
+}
