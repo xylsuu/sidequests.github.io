@@ -2,13 +2,16 @@
 <html lang="sk">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="profile.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forwarding to main page</title>
 </head>
 <body>
     <h1>Choose your style</h1>
-    <button onclick="setStylesheet('style.css')">Basic Style</button>
-    <button onclick="setStylesheet('dark_mind.css')">Dark Mind</button>
+    <div class="buttons">
+        <button class="button" id="button_anim_one" onclick="setStylesheet('style.css')">Basic Style</button>
+        <button class="button" id="button_anim_zero" onclick="setStylesheet('dark_mind.css')">Dark Mind</button>
+    </div>
 
     <script>
         function setStylesheet(stylesheet) {

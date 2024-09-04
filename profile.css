@@ -1,0 +1,54 @@
+body{
+    background-color: #383838;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+h1{
+    font-size: 100px;
+}
+
+.buttons {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.button {
+	appearance: none;
+	border: none;
+	outline: none;
+	background: none;
+	cursor: pointer;
+
+	font-size: 1.25rem;
+	font-weight: 700;
+	text-transform: uppercase;
+
+	padding: 1rem 1.5rem;
+	border-radius: 0.5rem;
+	background-color: rgb(67, 142, 255);
+	color: white;
+	margin-bottom: 2rem;
+    width: 200px;
+    margin-top: -25px;
+}
+
+#button_anim_zero {
+	background-image: linear-gradient(to right, rgb(67, 142, 255) 50%, #383838 50%);
+	background-size: 200%;
+	transition: 0.4s ease-out;
+}
+
+#button_anim_zero :hover {
+	background-position: right;
+}
+
+#button_anim_one {
+	background-image: linear-gradient(to right, rgb(67, 142, 255) 50%, #383838 50%);
+	background-size: 200%;
+	transition: 0.4s ease-out;
+}
+
+#button_anim_one :hover {
+	background-position: right;
+}
