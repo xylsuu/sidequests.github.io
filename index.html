@@ -1,32 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="sk">
 <head>
     <meta charset="UTF-8">
-    <title>Sidequests</title>
-    <link rel="stylesheet" href="style.css">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forwarding to main page</title>
 </head>
 <body>
-    <div class="site_header_title">
-        <br>
-        <div class="site_header_content">
-            <h1 class="animate__animated animate__lightSpeedInLeft">
-                Sidequests
-            </h1>
-            <h3 class="what_we_do">
-                Sidemissions for everyone everyday.
-            </h3>
-        </div>
-    </div>
-    <div class="site_inbeetween">
-        <h2>Who are we</h2>
-        <p>
-            Hi my name is Daniel, i develloped this website. While Matej was creating <mp class="masterpiece"> masterpiece</mp>. The app of century. The <strong>Sidequests</strong>.<br>
-            Our app is free of cost but you can still support us throught <Premium class="Red_glowing">Premium</Premium> or through <Donate class="Gold_glowing">Donations</Donate>.
-        </p>
-    </div>
+    <h1>Choose your style</h1>
+    <button onclick="setStylesheet('style.css')">Basic Style</button>
+    <button onclick="setStylesheet('dark_mind.css')">Dark Mind</button>
+
+    <script>
+        function setStylesheet(stylesheet) {
+            localStorage.setItem('selectedStylesheet', stylesheet);
+            window.location.href = 'home_page.html';
+        }
+    </script>
 </body>
 </html>
