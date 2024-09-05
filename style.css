@@ -49,3 +49,7 @@
 .masterpiece {
     color: #000000;
 }
+
+.sidequest_heading {
+    max-width: 100vw;
+}
