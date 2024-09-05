@@ -4,6 +4,17 @@ body{
     text-align: center;
 }
 
+h1 {
+	color: black;
+}
+
+h1 :hover {
+	color: white;
+	text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+                 0 0 20px rgba(255, 255, 255, 0.6),
+                 0 0 30px rgba(255, 255, 255, 0.4);
+}
+
 h1{
     font-size: 100px;
 }
@@ -32,6 +43,8 @@ h1{
     width: 200px;
     margin-top: -25px;
 }
+
+
 
 #button_anim_zero {
 	background-image: linear-gradient(to right, rgb(67, 142, 255) 50%, #383838 50%);
