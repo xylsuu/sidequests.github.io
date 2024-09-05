@@ -1,0 +1,52 @@
+.site_header_title{
+    font-size: 50px;
+    /*display: flex;*/               
+    justify-content: center;       
+    align-items: center;
+    text-align: center;
+    height: 1080px;
+    width: 100%;
+    background-color: rgb(67, 142, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.site_header_content {
+    padding-top: 300px;
+    max-width: 100vw;
+}
+.site_header_content h1:hover {
+    color: aliceblue;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+                 0 0 20px rgba(255, 255, 255, 0.6),
+                 0 0 30px rgba(255, 255, 255, 0.4);
+}
+
+.site_inbeetween {
+    font-size: 50px;              
+    justify-content: center;       
+    align-items: center;
+    text-align: center;
+    height: 1080px;
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.Red_glowing {
+    color: red;
+    text-shadow: 0 0 3px rgba(255, 112, 112, 0.8),
+                 0 0 3px rgba(255, 112, 112, 0.6),
+                 0 0 3px rgba(255, 112, 112, 0.4);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.Gold_glowing {
+    color: rgb(255, 196, 0);
+    text-shadow: 0 0 3px rgba(255, 196, 0, 0.8),
+                 0 0 3px rgba(255, 196, 0, 0.6),
+                 0 0 3px rgba(255, 196, 0, 0.4);
+                 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.masterpiece {
+    color: #000000;
+}
