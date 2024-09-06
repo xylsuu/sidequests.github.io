@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Okno názov</title>
+    <link id="themeStylesheet" rel="stylesheet" href="style.css"> <!-- Fallback to default CSS -->
+
+    <script>
+        window.onload = function() {
+            let stylesheet;
+
+            // Check if a stylesheet is saved in localStorage
+            if (localStorage.getItem('selectedStylesheet')) {
+                stylesheet = localStorage.getItem('selectedStylesheet');
+            } else {
+                // Detect mobile or desktop and apply the correct CSS
+                if (window.innerWidth <= 1000) {
+                    stylesheet = 'm_variables.css';  // Mobile CSS
+                } else {
+                    stylesheet = 'd_variables.css';  // Desktop CSS
+                }
+            }
+
+            // Apply the determined stylesheet
+            document.getElementById('themeStylesheet').href = stylesheet;
+        };
+    </script>
+</head>
+<body>
+    <div class="header">
+        <div class="title">
+            <h1>Sidequests</h1> <!-- Title with hover effect -->
+        </div>
+        <div class="description">
+            <h3>Sidemissions for everyone everyday.</h3>
+        </div>
+    </div>
+</body>
+</html>
