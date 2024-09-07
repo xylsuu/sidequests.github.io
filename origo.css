@@ -4,26 +4,49 @@ html, body {
     height: 100%;
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 .header {
     background-color: rgb(67, 142, 255);
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    height: 100vh; /* Zaberá celú výšku obrazovky */
+    height: 100vh; 
     width: 100%;
-    display: flex; /* Flexbox na centrovanie */
-    justify-content: center; /* Horizontálne centrovanie */
-    align-items: center; /* Vertikálne centrovanie */
-    flex-direction: column; /* Zabezpečí, že nadpis a podnadpis budú pod sebou */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column;
+    animation: fadeIn 1.5s ease-in-out; /* Fade-in efekt pre celý header */
 }
 
 .title h1 {
     color: black;
-    transition: color 0.3s ease;
     font-size: 50px;
+    animation: slideIn 1s ease-out; /* Animácia príchodu zhora */
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .title h1:hover {
     color: white;
+    transform: scale(1.1); /* Zvýraznenie pri hover */
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
                  0 0 20px rgba(255, 255, 255, 0.6),
                  0 0 30px rgba(255, 255, 255, 0.4);
@@ -33,19 +56,63 @@ html, body {
     color: black;
     font-size: 30px;
     margin-top: 10px;
+    animation: fadeIn 2s ease-in; /* Pomalšie fade-in pre podnadpis */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.description h3:hover {
+    color: #ffffff;
+    transform: scale(1.05); /* Zvýraznenie a malé zväčšenie pri hover */
 }
 
 .about_us {
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 11.5px;
+    animation: fadeIn 3s ease-in-out; /* Fade-in efekt pre sekciu o nás */
 }
 
 .ab_us h3 {
     font-size: 40px;
     height: 100px;
+    transition: font-size 0.5s ease; /* Plynulá zmena veľkosti pri hover */
 }
 
 .ab_us h3:hover {
     font-size: 50px;
+    color: rgb(67, 142, 255); /* Zmena farby pri hover */
+}
+
+.text_abus p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    animation: fadeIn 3.5s ease-in; /* Pomalší fade-in pre text */
+}
+
+.download_app {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 200px;
+    animation: fadeIn 4s ease-in; /* Fade-in pre sekciu stiahnutia */
+}
+
+.download_button {
+    display: inline-block;
+    background-color: #383838;
+    color: white;
+    font-size: 24px;
+    padding: 20px 50px; 
+    text-decoration: none;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 5s ease-in; /* Najpomalší fade-in pre tlačidlo */
+}
+
+.download_button:hover {
+    background-color: rgb(67, 142, 255); 
+    transform: scale(1.05); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Zvýšenie tieňa pri hover */
 }
