@@ -1,12 +1,63 @@
 <!DOCTYPE html>
 <html>
-	<head>
-	    <meta charset="UTF-8">
-	    <title>Okno názov</title>
-	    <link rel="stylesheet" href="gapp.css">
-    	    <script src="scripts.js"></script>
-	</head>
-	<body>
-    	<!-- htmlko -->
-	</body>
+<head>
+    <meta charset="UTF-8">
+    <title>Download Sidequest</title>
+    <link rel="stylesheet" href="gapp.css">
+    <script src="gapp_scripts.js"></script>
+</head>
+<body>
+
+
+	<div class="header">
+		<h3>Download Sidequests</h3>
+	</div>
+
+
+
+	<div class="bodycko">
+
+    	<div class="container">
+    	    <button id="download-button" onclick="showAgreement()">Download</button>
+    	</div>
+    	<div id="legal-agreement" class="modal hidden">
+    	    <div class="modal-content">
+    	        <h2>Agreement</h2>
+    	        <h4>Introduction</h4>
+    	        <p>This agreement ("Agreement") is a legal contract between the user ("User") and Vexta Studios regarding the use of the Sidequests software ("Software") created by Daniel Jaššo and Matej Mores. By downloading, installing, or using the Software, the User agrees to comply with the terms and conditions set forth in this Agreement.</p>
+    	        <h4>No Warranties or Refunds</h4>
+    	        <p>The Software is provided "as-is" without any warranties, express or implied. Vexta Studios does not guarantee that the Software will meet the User's requirements or that it will be error-free. The User acknowledges and agrees that the Software cannot be refunded or exchanged.</p>
+    	        <h4>Modifications and Support</h4>
+    	        <p>Any unauthorized modification of the Software will void the User's eligibility to receive support from Vexta Studios. Users who alter the Software in any way will lose all rights to contact or receive assistance from our support team.</p>
+    	        <h4>Liability Disclaimer</h4>
+    	        <p>Vexta Studios, Daniel Jaššo, and Matej Mores are not liable for any damage, loss, or other issues that may arise from the use or inability to use the Software. The User assumes full responsibility for any risks involved in the installation and operation of the Software.</p>
+    	        <h4>Personal Use Only</h4>
+    	        <p>The Software is intended solely for personal use. Any form of distribution, sharing, or commercial use of the Software without explicit permission from Vexta Studios is strictly prohibited.</p>
+    	        <h4>Penalty for Unauthorized Distribution</h4>
+    	        <p>If the User engages in the illegal distribution or unauthorized sharing of the Software, a penalty of €4 per unauthorized copy will be imposed. Vexta Studios reserves the right to pursue legal action in such cases.</p>
+    	        <h4>Acceptance of Terms</h4>
+    	        <p>By downloading or using the Software, the User acknowledges that they have read, understood, and agree to be bound by this Agreement.</p>
+    	        <h4>Governing Law</h4>
+    	        <p>This Agreement shall be governed by and construed in accordance with the laws of the jurisdiction in which Vexta Studios operates.</p>
+    	        <h4><strong>By proceeding with the download, the User agrees to these terms and conditions.</strong></h4>
+    	        <button id="accept-btn" onclick="acceptAgreement()">Accept</button>
+    	    </div>
+    	</div>
+    	<div id="actual-download" class="hidden">
+    	    <a id="download-link" href="assets/versions/pack.img" download>Download Sidequest</a>
+    	</div>
+
+    	<script>
+    	    function showAgreement() {
+    	        document.getElementById('legal-agreement').classList.remove('hidden');
+    	    }
+
+    	    function acceptAgreement() {
+    	        document.getElementById('legal-agreement').classList.add('hidden');
+    	        document.getElementById('download-button').classList.add('hidden');
+    	        document.getElementById('actual-download').classList.remove('hidden');
+    	    }
+    	</script>
+	</div>
+</body>
 </html>
