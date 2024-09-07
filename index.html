@@ -32,10 +32,14 @@
     <audio id="introSound" src="./assets/intro-sound.mp3" preload="auto"></audio>
 
     <script>
-        window.onload = function() {
+        function playSound() {
             const audio = document.getElementById('introSound');
             audio.play();
-        };
+        }
+
+        
+        window.addEventListener('click', playSound, { once: true });
+        window.addEventListener('scroll', playSound, { once: true });
     </script>
 
 
