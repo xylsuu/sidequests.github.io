@@ -29,6 +29,15 @@
     </style>
 </head>
 <body>
+    <audio id="introSound" src="intro-sound.mp3" preload="auto"></audio>
+
+    <script>
+        window.onload = function() {
+            const audio = document.getElementById('introSound');
+            audio.play();
+        };
+    </script>
+
 
     <div class="header">
         <div class="header_content">
