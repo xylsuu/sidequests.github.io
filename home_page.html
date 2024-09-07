@@ -6,7 +6,7 @@
     <title>Sidequest HomePage</title>
     <link rel="stylesheet" href="origo.css">
     <style>
-        /* Animácia pre podčiarknutie */
+        
         .underline-animation {
             display: inline-block;
             position: relative;
@@ -33,7 +33,7 @@
     <div class="header">
         <div class="header_content">
             <div class="title">
-                <h1>Sidequests</h1> <!-- Title with hover effect -->
+                <h1>Sidequests</h1> 
             </div>
             <div class="description">
                 <h3>Sidemissions for everyone everyday.</h3>
@@ -61,7 +61,6 @@
     </div>
 
     <script>
-        // Funkcia na detekciu, či je element viditeľný
         function isElementInViewport(el) {
             const rect = el.getBoundingClientRect();
             return (
@@ -72,21 +71,20 @@
             );
         }
 
-        // Pridanie animácie pre podčiarknutie
         function activateUnderlineAnimations() {
             const daniel = document.getElementById('daniel');
             const matej = document.getElementById('matej');
 
             if (isElementInViewport(document.getElementById('aboutUsSection'))) {
-                // Pridáme aktívnu triedu s malým oneskorením medzi Daniel a Matej
+            
                 daniel.classList.add('active');
                 setTimeout(() => {
                     matej.classList.add('active');
-                }, 500); // Oneskorenie 500ms
+                }, 500); 
             }
         }
 
-        // Poslucháč udalosti scroll
+        
         window.addEventListener('scroll', activateUnderlineAnimations);
     </script>
 </body>
