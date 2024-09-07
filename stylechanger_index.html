@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="profile.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forwarding to main page</title>
+</head>
+<body>
+    <h1><tag class="white_glow">Choose</tag> your style</h1>
+    <div class="buttons">
+        <button class="button" id="button_anim_one" onclick="setStylesheet('origo.css')">Basic Style</button>
+        <button class="button" id="button_anim_zero" onclick="setStylesheet('dark_mind.css')">Dark Mind</button>
+    </div>
+
+    <script>
+        function setStylesheet(stylesheet) {
+            localStorage.setItem('selectedStylesheet', stylesheet);
+            window.location.href = 'home_page.html';
+        }
+    </script>
+</body>
+</html>
